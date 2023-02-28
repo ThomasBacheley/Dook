@@ -3,7 +3,7 @@ function Book(props) {
     <tr>
       <th scope="row">{props.book.id}</th>
       <td>{props.book.name}</td>
-      <td>{props.book.authorname}</td>
+      <td>{props.book.authors}</td>
     </tr>
   );
 }
