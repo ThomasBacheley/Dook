@@ -7,17 +7,10 @@ import ListBook from "./components/ListBook";
 
 import axios from "axios";
 
-function App() {
-  const apikey = "AIzaSyCJ4CtX0Bz0ONtdgzyUCohSsx5RKV9IZL0";
-
-  var books = [{
-    id:'U0nxVnZlsosC',
-    name:'Business development',
-    authors:'Jérôme Gayet'
-  }];
+async function App() {
   
-  /* await axios
-    .get("https://www.googleapis.com/books/v1/volumes?q=development&key=" + apikey)
+  await axios
+    .get("https://www.googleapis.com/books/v1/volumes?q=$%7Bexample%7D&maxResults=20")
     .then((response) => {
       console.log(response.data)
       response.data.items.forEach((book) => {
@@ -29,7 +22,6 @@ function App() {
         books = [...books, book];
       });
     });
- */
     console.log(books);
 
   return (
