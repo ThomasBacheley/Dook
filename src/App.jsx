@@ -1,18 +1,18 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import "./App.css";
-import data from './data.json';
 
 import ListBook from "./components/ListBook";
+import UserLibrairy from "./components/UserLibrairy";
 
 import axios from "axios";
 
-async function App() {
-  
-  await axios
-    .get("https://www.googleapis.com/books/v1/volumes?q=$%7Bexample%7D&maxResults=20")
+function App() {
+  var books = [];
+  axios
+    .get(
+      "https://www.googleapis.com/books/v1/volumes?q=$%7Bexample%7D&maxResults=20"
+    )
     .then((response) => {
-      console.log(response.data)
       response.data.items.forEach((book) => {
         var book = {
           id: book.id,
@@ -22,11 +22,23 @@ async function App() {
         books = [...books, book];
       });
     });
-    console.log(books);
+  console.log(books);
 
   return (
-    <div className="App">
-      <ListBook books={books}></ListBook>
+    <div>
+      <h1>Dook !</h1>
+      <div className="d-flex justify-content-around">
+        <div>
+          <h1>Book List</h1>
+          <ListBook books={books}></ListBook>
+        </div>
+        <div>
+          <h1>User Librairy</h1>
+          <UserLibrairy
+            books={[{ name: "ywee", authors: "jean", id: 3 }]}
+          ></UserLibrairy>
+        </div>
+      </div>
     </div>
   );
 }
