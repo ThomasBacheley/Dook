@@ -1,0 +1,923 @@
+{
+    "kind": "books#volumes",
+    "totalItems": 813,
+    "items": [
+        {
+            "kind": "books#volume",
+            "id": "U0nxVnZlsosC",
+            "etag": "9HMsobVsr6s",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/U0nxVnZlsosC",
+            "volumeInfo": {
+                "title": "Gender and development",
+                "authors": [
+                    "Danielle de Lame"
+                ],
+                "publisher": "LIT Verlag Münster",
+                "publishedDate": "2000",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "3825847985"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9783825847982"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 214,
+                "printType": "BOOK",
+                "categories": [
+                    "Social Science"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "1.6.9.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=U0nxVnZlsosC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=U0nxVnZlsosC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "fr",
+                "previewLink": "http://books.google.fr/books?id=U0nxVnZlsosC&pg=PA194&dq=development&hl=&cd=1&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=U0nxVnZlsosC&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=U0nxVnZlsosC"
+            },
+            "saleInfo": {
+                "country": "FR",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 15.9,
+                    "currencyCode": "EUR"
+                },
+                "retailPrice": {
+                    "amount": 15.9,
+                    "currencyCode": "EUR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=U0nxVnZlsosC&rdid=book-U0nxVnZlsosC&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 15900000,
+                            "currencyCode": "EUR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 15900000,
+                            "currencyCode": "EUR"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "FR",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=U0nxVnZlsosC&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Alou- Beyond &#39; Negotiation &#39; , challenges of participatory projects for the anthropology of <b>development</b> , by J. Gould- The rural concillor as <b>development</b> agent : an uneasy connection : a report from Senegal , by B. Venema- Les courtiers&nbsp;..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "YLA3G50xcFUC",
+            "etag": "m2E+y7KOnck",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/YLA3G50xcFUC",
+            "volumeInfo": {
+                "title": "Business development",
+                "subtitle": "Comment faire décoller votre business",
+                "authors": [
+                    "Jérôme Gayet"
+                ],
+                "publisher": "Editions Eyrolles",
+                "publishedDate": "2011-07-07",
+                "description": "Créer les conditions favorables au développement de l'entreprise Créer son entreprise est une chose, la développer s'avère plus difficile dans un environnement concurrentiel mondialisé. L'auteur offre, dans cet ouvrage, de précieux conseils aux entreprises afin de leur permettre de sortir plus fortes de la dépression économique. Il décrypte, exemples à l'appui, le mode d'emploi du business development. Cet éclairage sur les leviers actuels et futurs du développement des entreprises est ancré dans la réalité grâce aux conseils de plus de quarante experts et de dirigeants d'entreprises très performantes. Ce livre s'adresse à tous ceux qui souhaitent explorer les nouveaux territoires de croissance, appréhender les bons réflexes qui vont installer l'entreprise dans un cycle vertueux de développement. Avec un préface d'Eric Revel.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9782212866940"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "2212866941"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 200,
+                "printType": "BOOK",
+                "categories": [
+                    "Business & Economics"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "1.14.13.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=YLA3G50xcFUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=YLA3G50xcFUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "fr",
+                "previewLink": "http://books.google.fr/books?id=YLA3G50xcFUC&pg=PA104&dq=development&hl=&cd=2&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=YLA3G50xcFUC&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=YLA3G50xcFUC"
+            },
+            "saleInfo": {
+                "country": "FR",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 15.99,
+                    "currencyCode": "EUR"
+                },
+                "retailPrice": {
+                    "amount": 15.99,
+                    "currencyCode": "EUR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=YLA3G50xcFUC&rdid=book-YLA3G50xcFUC&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 15990000,
+                            "currencyCode": "EUR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 15990000,
+                            "currencyCode": "EUR"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "FR",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.fr/books/download/Business_development-sample-epub.acsm?id=YLA3G50xcFUC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.fr/books/download/Business_development-sample-pdf.acsm?id=YLA3G50xcFUC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=YLA3G50xcFUC&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "d&#39;entreprises Maturité <b>Développement</b> Q) Q) en solo Croissance naturelle <b>Développement</b>. |. Q) Création Q Temps &gt; FigUre Z - le cycle de <b>développement</b> des entreprises Où est passé le business <b>development</b>? » Pourquoi la fonction «business&nbsp;..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "hSfWAgAAQBAJ",
+            "etag": "RylPe0+J2mg",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/hSfWAgAAQBAJ",
+            "volumeInfo": {
+                "title": "Research and Development Statistics 2001",
+                "authors": [
+                    "OECD"
+                ],
+                "publisher": "OECD Publishing",
+                "publishedDate": "2002-04-19",
+                "description": "This publication provides recent basic statistics on the resources devoted to R&D in OECD countries. The statistical series cover expenditure by source of funds antype of costs, personnel by occupation and/or level of qualification, for enterprises by sector and education by field of science.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9789264075498"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "9264075496"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 492,
+                "printType": "BOOK",
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.3.0.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=hSfWAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=hSfWAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "fr",
+                "previewLink": "http://books.google.fr/books?id=hSfWAgAAQBAJ&pg=PA389&dq=development&hl=&cd=3&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=hSfWAgAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=hSfWAgAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "FR",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 83.34,
+                    "currencyCode": "EUR"
+                },
+                "retailPrice": {
+                    "amount": 83.34,
+                    "currencyCode": "EUR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=hSfWAgAAQBAJ&rdid=book-hSfWAgAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 83340000,
+                            "currencyCode": "EUR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 83340000,
+                            "currencyCode": "EUR"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "FR",
+                "viewability": "ALL_PAGES",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.fr/books/download/Research_and_Development_Statistics_2001-sample-pdf.acsm?id=hSfWAgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=hSfWAgAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Santé Social <b>development</b> and services .. .. 50 .. .. .. .. <b>Développement</b> et services sociaux Earth and atmosphere .. .. .. .. .. .. .. Milieu terrestre et atmosphère Advancement of knowledge .. .. 110 .. .. .. .. Promotion générale des&nbsp;..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "lOR9OlWZWdAC",
+            "etag": "PejIsZedOPk",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/lOR9OlWZWdAC",
+            "volumeInfo": {
+                "title": "Research and Development Statistics 1999",
+                "authors": [
+                    "OECD"
+                ],
+                "publisher": "OECD Publishing",
+                "publishedDate": "2000-02-21",
+                "description": "This publication provides recent basic statistics on the resources devoted to R&D in OECD countries in terms of expenditure by source of funds and type of costs, personnel by occupation or level of qualification, for enterprises by industry and for education by field of science.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9789264080843"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "9264080848"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 544,
+                "printType": "BOOK",
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.5.0.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=lOR9OlWZWdAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=lOR9OlWZWdAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "fr",
+                "previewLink": "http://books.google.fr/books?id=lOR9OlWZWdAC&pg=PA217&dq=development&hl=&cd=4&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=lOR9OlWZWdAC&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=lOR9OlWZWdAC"
+            },
+            "saleInfo": {
+                "country": "FR",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 78.07,
+                    "currencyCode": "EUR"
+                },
+                "retailPrice": {
+                    "amount": 78.07,
+                    "currencyCode": "EUR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=lOR9OlWZWdAC&rdid=book-lOR9OlWZWdAC&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 78070000,
+                            "currencyCode": "EUR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 78070000,
+                            "currencyCode": "EUR"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "FR",
+                "viewability": "ALL_PAGES",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.fr/books/download/Research_and_Development_Statistics_1999-sample-pdf.acsm?id=lOR9OlWZWdAC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=lOR9OlWZWdAC&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Millions monnaie nationale Business enterprise Agriculture, forestryandfishing Industrial <b>development</b> Energy Transportandtelecommunications Urbanand rural planning Prevention ofpollution Identification &amp; treatment of pollution Health&nbsp;..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "elccCwAAQBAJ",
+            "etag": "zYumCTez9Fk",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/elccCwAAQBAJ",
+            "volumeInfo": {
+                "title": "Objectif business development",
+                "subtitle": "Dans la peau des business developers",
+                "authors": [
+                    "Anne Brunet-Mbappe",
+                    "Catherine de Géry"
+                ],
+                "publisher": "EMS Editions",
+                "publishedDate": "2015-05-29",
+                "description": "La France peine à redresser sa compétitivité. La recherche permanente d’opportunités tous azimuts est plus qu’une nécessité pour les entreprises, elle constitue aujourd’hui une stratégie obligatoire ! Mais les pressions extérieures peuvent permettre aux entreprises françaises de trouver en elles-mêmes les ressorts de leur développement. A condition de modifier la manière d’aborder l’environnement. Deux axes doivent être privilégiés : la capacité d’innovation et la satisfaction client. Le business development apparaît alors comme la stratégie porteuse de création de valeur pour l’ensemble des parties prenantes de l’entreprise. Le business development permet de mener concomitamment une orientation produit et une orientation marché. Il dépasse l’approche fonctionnelle de l’entreprise en faisant travailler conjointement la R&D, le marketing et le service commercial. L’entreprise peut alors favoriser la créativité et la prise de risque pour faire flèche de tout bois. Mais comment nos entreprises peuvent-elles s’y prendre ? Quel type d’organisation et de management mettre en place ? Quelle posture adopter ? Quelles compétences et quels profils mobiliser ? Cet ouvrage apporte des réponses à ces questions en plongeant au cœur du business development et du monde des business developers. A travers des développements théoriques et de nombreuses illustrations, il livre des éléments essentiels pour comprendre la pertinence de l’approche stratégique business development et pour penser autrement la relation entre les innovations et le marché. Il nous invite à tous devenir business developers au service de la compétitivité de nos entreprises !",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9782847697414"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "2847697411"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 205,
+                "printType": "BOOK",
+                "categories": [
+                    "Business & Economics"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=elccCwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=elccCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "fr",
+                "previewLink": "http://books.google.fr/books?id=elccCwAAQBAJ&pg=PA142&dq=development&hl=&cd=5&source=gbs_api",
+                "infoLink": "http://books.google.fr/books?id=elccCwAAQBAJ&dq=development&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Objectif_business_development.html?hl=&id=elccCwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "FR",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "FR",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=elccCwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Introduction : business <b>development</b>, business developer, de quoi parle-t-on ? Dans les entreprises, le business <b>development</b> n&#39;est pas une chose nouvelle, on en parle depuis plusieurs décennies. Ce qui est nouveau en revanche,&nbsp;..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "tQFXEAAAQBAJ",
+            "etag": "FbJHjDia+AU",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/tQFXEAAAQBAJ",
+            "volumeInfo": {
+                "title": "Economic Liberalisation and Development in Africa",
+                "authors": [
+                    "Kwame Sundaram"
+                ],
+                "publisher": "African Books Collective",
+                "publishedDate": "2008-05-15",
+                "description": "Sundaram notes that over three decades of economic stagnation, contraction and increased poverty have taken a huge toll on Africa's economic, social and political fabric; and pro-active efforts are urgently required in order to build new capacities and c",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9782869783942"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "2869783949"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 76,
+                "printType": "BOOK",
+                "categories": [
+                    "Business & Economics"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.1.1.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=tQFXEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=tQFXEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "fr",
+                "previewLink": "http://books.google.fr/books?id=tQFXEAAAQBAJ&pg=PA29&dq=development&hl=&cd=6&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=tQFXEAAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=tQFXEAAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "FR",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 19.04,
+                    "currencyCode": "EUR"
+                },
+                "retailPrice": {
+                    "amount": 19.04,
+                    "currencyCode": "EUR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=tQFXEAAAQBAJ&rdid=book-tQFXEAAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 19040000,
+                            "currencyCode": "EUR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 19040000,
+                            "currencyCode": "EUR"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "FR",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.fr/books/download/Economic_Liberalisation_and_Development-sample-pdf.acsm?id=tQFXEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=tQFXEAAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Monographies Economic Liberalisation and <b>Development</b> in Africa La libération économique et le <b>Développement</b> en Afrique Jomo Kwame Sundaram In this endnote address delivered at the 11th General Assembly of CODESRIA , held Maputo in 2005&nbsp;..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "apZUKN4qUdYC",
+            "etag": "q1oRkDm7eEs",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/apZUKN4qUdYC",
+            "volumeInfo": {
+                "title": "Religious Elites in the Development Arena",
+                "authors": [
+                    "Maria Margaretha Antonia Kaag",
+                    "Maud Saint-Lary"
+                ],
+                "publisher": "LIT Verlag Münster",
+                "publishedDate": "2011",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9783643113429"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "3643113420"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 169,
+                "printType": "BOOK",
+                "categories": [
+                    "Africa"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "1.1.0.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=apZUKN4qUdYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=apZUKN4qUdYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "fr",
+                "previewLink": "http://books.google.fr/books?id=apZUKN4qUdYC&pg=PA62&dq=development&hl=&cd=7&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=apZUKN4qUdYC&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=apZUKN4qUdYC"
+            },
+            "saleInfo": {
+                "country": "FR",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 24.9,
+                    "currencyCode": "EUR"
+                },
+                "retailPrice": {
+                    "amount": 24.9,
+                    "currencyCode": "EUR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=apZUKN4qUdYC&rdid=book-apZUKN4qUdYC&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 24900000,
+                            "currencyCode": "EUR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 24900000,
+                            "currencyCode": "EUR"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "FR",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=apZUKN4qUdYC&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Ce « <b>développement</b> islamique » révèle combien la sphère islamique s&#39;investit dans différents domaines de la vie publique alors que pendant longtemps les politiques de <b>développement</b> sont restées un domaine réservé de l&#39;État."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "Rsk8DwAAQBAJ",
+            "etag": "b73dRRskqaI",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/Rsk8DwAAQBAJ",
+            "volumeInfo": {
+                "title": "Le développement du lac Tchad / Development of Lake Chad",
+                "subtitle": "Situation actuelle et futurs possibles / Current Situation and Possible Outcomes",
+                "authors": [
+                    "Collectif"
+                ],
+                "publisher": "IRD Éditions",
+                "publishedDate": "2017-10-30",
+                "description": "Le lac Tchad et son avenir sont au cœur des préoccupations politiques régionales et internationales. Cet espace vital, à la charnière de l'Afrique de l'Ouest et de l'Afrique centrale, a longtemps fasciné, depuis les géographes arabes au Moyen-Âge jusqu'aux explorateurs européens du XIXe siècle. Il suscite aujourd'hui des interrogations fortes sur l'environnement, l'eau, le climat et le développement régional. Le lac Tchad va-t-il s'assécher ? Quelles seraient alors les conséquences pour les 13 millions d'hommes qui en dépendent, sur un rayon de 300 km ? Les discours publics qui traitent de l'avenir du lac Tchad, le plus souvent alarmistes, sont dans l'ensemble sources d'une grande confusion et entretiennent une image brouillée de la situation. Une connaissance précise des réalités est pourtant nécessaire pour construire une vision partagée de cet avenir et adopter une stratégie qui permette de relever les défis du développement durable du lac. La Commission du bassin du lac Tchad (CBLT) a commandé à l'Institut de recherche pour le développement (IRD) une expertise collégiale sur la préservation et le développement du lac Tchad. Cette expertise, réalisée par un collège d'experts pluridisciplinaire et paritaire Nord-Sud, recense les connaissances actuelles sur le lac et identifie les différents choix politiques susceptibles de stimuler son développement. Elle aboutit à une série de recommandations utiles aux décideurs politiques en matière de soutenabilité environnementale, de sécurité alimentaire et d'emploi.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9782709918688"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "2709918684"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 216,
+                "printType": "BOOK",
+                "categories": [
+                    "Nature"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "1.6.7.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=Rsk8DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=Rsk8DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "fr",
+                "previewLink": "http://books.google.fr/books?id=Rsk8DwAAQBAJ&pg=PA195&dq=development&hl=&cd=8&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=Rsk8DwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=Rsk8DwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "FR",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 2.99,
+                    "currencyCode": "EUR"
+                },
+                "retailPrice": {
+                    "amount": 2.99,
+                    "currencyCode": "EUR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=Rsk8DwAAQBAJ&rdid=book-Rsk8DwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 2990000,
+                            "currencyCode": "EUR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 2990000,
+                            "currencyCode": "EUR"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "FR",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.fr/books/download/Le_d%C3%A9veloppement_du_lac_Tchad_Developme-sample-epub.acsm?id=Rsk8DwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.fr/books/download/Le_d%C3%A9veloppement_du_lac_Tchad_Developme-sample-pdf.acsm?id=Rsk8DwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=Rsk8DwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Building a Lake <b>Development</b> Plan ( LDP ) to structure , at the Lake scale , the coordination needed between environmental management ( the LCBC&#39;s main focus in recent years ) and <b>development</b> progress , while implementing the Water&nbsp;..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "HAdXjEijxfAC",
+            "etag": "w9fOEVBlUWs",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/HAdXjEijxfAC",
+            "volumeInfo": {
+                "title": "Aquaculture Development and Research in Sub-Saharan Africa",
+                "subtitle": "National Reviews",
+                "authors": [
+                    "Food and Agriculture Organization of the United Nations"
+                ],
+                "publisher": "Food & Agriculture Org.",
+                "publishedDate": "1994",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "9250035691"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9789250035697"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 408,
+                "printType": "BOOK",
+                "categories": [
+                    "Aquaculture"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.4.6.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=HAdXjEijxfAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=HAdXjEijxfAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "fr",
+                "previewLink": "http://books.google.fr/books?id=HAdXjEijxfAC&pg=PA5&dq=development&hl=&cd=9&source=gbs_api",
+                "infoLink": "http://books.google.fr/books?id=HAdXjEijxfAC&dq=development&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Aquaculture_Development_and_Research_in.html?hl=&id=HAdXjEijxfAC"
+            },
+            "saleInfo": {
+                "country": "FR",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "FR",
+                "viewability": "ALL_PAGES",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.fr/books/download/Aquaculture_Development_and_Research_in-sample-pdf.acsm?id=HAdXjEijxfAC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=HAdXjEijxfAC&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "PREPARATION OF THIS DOCUMENT · In July - August 1992 , the Fisheries Department of the Food and Agriculture Organization of the United Nations ( FAO ) decided to update the information on aquaculture <b>development</b> and research needs in&nbsp;..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "jkiMAkg0EPAC",
+            "etag": "VvsgpHQlNrs",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/jkiMAkg0EPAC",
+            "volumeInfo": {
+                "title": "Research and Development Expenditure in Industry 2000",
+                "authors": [
+                    "OECD"
+                ],
+                "publisher": "OECD Publishing",
+                "publishedDate": "2000-08-29",
+                "description": "This annual publication presents R&D expenditure data (ANBERD) for 16 OECD countries, as well as a zone total for the European Union. The coverage has been extended to 58 sectors, including extended coverage of the services, starting with the survey year 1987.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9789264087507"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "9264087508"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 136,
+                "printType": "BOOK",
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.3.0.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=jkiMAkg0EPAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=jkiMAkg0EPAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "fr",
+                "previewLink": "http://books.google.fr/books?id=jkiMAkg0EPAC&pg=PA2&dq=development&hl=&cd=10&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=jkiMAkg0EPAC&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=jkiMAkg0EPAC"
+            },
+            "saleInfo": {
+                "country": "FR",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 49.58,
+                    "currencyCode": "EUR"
+                },
+                "retailPrice": {
+                    "amount": 49.58,
+                    "currencyCode": "EUR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=jkiMAkg0EPAC&rdid=book-jkiMAkg0EPAC&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 49580000,
+                            "currencyCode": "EUR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 49580000,
+                            "currencyCode": "EUR"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "FR",
+                "viewability": "ALL_PAGES",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.fr/books/download/Research_and_Development_Expenditure_in-sample-pdf.acsm?id=jkiMAkg0EPAC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=jkiMAkg0EPAC&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "ORGANISATION FOR ECONOMIC CO-OPERATION AND <b>DEVELOPMENT</b> Pursuant to Article 1 of the Convention signed in Paris on 14th December 1960, and which came into force on 30th September 1961, the Organisation for Economic Co-operation and&nbsp;..."
+            }
+        }
+    ]
+}
