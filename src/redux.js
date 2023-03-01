@@ -6,9 +6,9 @@ const bookSlice = createSlice({
     reducers:{
         addBook:(state, action)=>{
             const newBook = {
+                id: action.payload.id,
                 title: action.payload.title,
-                author: action.payload.author,
-                edition: action.payload.edition
+                author: action.payload.author
             }
 
             state.push(newBook);

@@ -3,11 +3,14 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 
 import ListBook from "./components/ListBook";
 import UserLibrairy from "./components/UserLibrairy";
+import FormLog from "./components/FormLog";
+import MyHeaders from "./components/MyHeaders";
 
 import axios from "axios";
+import redux from "./redux";
 
 function App() {
-  var books = [];
+  var go = false;
   axios
     .get(
       "https://www.googleapis.com/books/v1/volumes?q=$%7Bexample%7D&maxResults=20"
@@ -16,21 +19,20 @@ function App() {
       response.data.items.forEach((book) => {
         var book = {
           id: book.id,
-          name: book.volumeInfo.title,
-          authorname: "Inconnu",
+          title: book.volumeInfo.title,
+          author: "Inconnu",
         };
-        books = [...books, book];
+        redux.dispatch({type:'book/addBook',payload:book});
       });
     });
-  console.log(books);
 
   return (
-    <div>
-      <h1>Dook !</h1>
-      <div className="d-flex justify-content-around">
+    <div className="container mt-3">
+      <MyHeaders/>
+      <div className="d-flex justify-content-between">
         <div>
           <h1>Book List</h1>
-          <ListBook books={books}></ListBook>
+          <ListBook books={redux.getState().book}></ListBook>
         </div>
         <div>
           <h1>User Librairy</h1>
@@ -39,6 +41,7 @@ function App() {
           ></UserLibrairy>
         </div>
       </div>
+      <FormLog></FormLog>
     </div>
   );
 }
