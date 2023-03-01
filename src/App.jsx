@@ -27,21 +27,23 @@ function App() {
   console.log(books);
 
   return (
-    <div className="container mt-3">
-      <MyHeaders/>
-      <div className="d-flex justify-content-between">
-        <div>
-          <h1>Book List</h1>
-          <ListBook books={books}></ListBook>
+    <div className="bg-perso1 pt-3 h-100">
+      <div className="container">
+        <MyHeaders/>
+        <div className="d-flex justify-content-between">
+          <div>
+            <h1>Book List</h1>
+            <ListBook books={books}></ListBook>
+          </div>
+          <div>
+            <h1>User Librairy</h1>
+            <UserLibrairy
+              books={[{ name: "ywee", authors: "jean", id: 3 }]}
+            ></UserLibrairy>
+          </div>
         </div>
-        <div>
-          <h1>User Librairy</h1>
-          <UserLibrairy
-            books={[{ name: "ywee", authors: "jean", id: 3 }]}
-          ></UserLibrairy>
-        </div>
+        <FormLog></FormLog>
       </div>
-      <FormLog></FormLog>
     </div>
   );
 }
