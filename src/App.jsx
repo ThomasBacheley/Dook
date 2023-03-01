@@ -3,6 +3,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 
 import ListBook from "./components/ListBook";
 import UserLibrairy from "./components/UserLibrairy";
+import FormLog from "./components/FormLog";
 
 import axios from "axios";
 
@@ -39,6 +40,7 @@ function App() {
           ></UserLibrairy>
         </div>
       </div>
+      <FormLog></FormLog>
     </div>
   );
 }
