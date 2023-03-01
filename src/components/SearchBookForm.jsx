@@ -15,7 +15,7 @@ const SearchbookForm = (props) => {
         event.preventDefault();
         if (!research) return;
         props.editResearch(research); // et c'est la qu'on add notre user en quelque sorte
-        setResearch(initialFormState);
+        setResearch(research);
       }}
     >
       <label>Book Title</label>
