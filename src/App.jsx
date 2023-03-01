@@ -4,6 +4,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import ListBook from "./components/ListBook";
 import UserLibrairy from "./components/UserLibrairy";
 import FormLog from "./components/FormLog";
+import MyHeaders from "./components/MyHeaders";
 
 import axios from "axios";
 
@@ -26,9 +27,9 @@ function App() {
   console.log(books);
 
   return (
-    <div>
-      <h1>Dook !</h1>
-      <div className="d-flex justify-content-around">
+    <div className="container mt-3">
+      <MyHeaders/>
+      <div className="d-flex justify-content-between">
         <div>
           <h1>Book List</h1>
           <ListBook books={books}></ListBook>
