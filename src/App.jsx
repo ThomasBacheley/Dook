@@ -7,24 +7,26 @@ import FormLog from "./components/FormLog";
 import MyHeaders from "./components/MyHeaders";
 
 import axios from "axios";
+import redux from "./redux";
 
 function App() {
-  var books = [];
   axios
     .get(
-      "https://www.googleapis.com/books/v1/volumes?q=$%7Bexample%7D&maxResults=20"
+      "https://www.googleapis.com/books/v1/volumes?q=$%7Bexample%7D&maxResults=10"
     )
     .then((response) => {
       response.data.items.forEach((book) => {
         var book = {
           id: book.id,
-          name: book.volumeInfo.title,
-          authorname: "Inconnu",
+          title: book.volumeInfo.title,
+          author: "Inconnu",
         };
-        books = [...books, book];
+        redux.dispatch({type:'book/addBook',payload:book});
+        
+        var books = redux.dispatch({type:'book/getBook'});
+        console.log(books);
       });
     });
-  console.log(books);
 
   return (
     <div className="container mt-3">
@@ -32,7 +34,7 @@ function App() {
       <div className="d-flex justify-content-between">
         <div>
           <h1>Book List</h1>
-          <ListBook books={books}></ListBook>
+          <ListBook></ListBook>
         </div>
         <div>
           <h1>User Librairy</h1>

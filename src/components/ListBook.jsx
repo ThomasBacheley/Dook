@@ -1,4 +1,5 @@
 import Book from "./Book";
+import redux from "../redux";
 
 function ListBook(props) {
   return (
@@ -11,9 +12,9 @@ function ListBook(props) {
         </tr>
       </thead>
       <tbody>
-        {props.books.map((book) => (
-            <Book key={book.id} book={book}></Book>
-        ))}
+        {/* {redux.getState().map((book)=>(
+          <Book key={book.id} book={book}></Book>
+        ))} */}
       </tbody>
     </table>
   );
