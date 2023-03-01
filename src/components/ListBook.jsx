@@ -2,8 +2,8 @@ import Book from "./Book";
 
 function ListBook(props) {
   return (
-    <table className="table">
-      <thead>
+    <table className="table bg-perso2">
+      <thead className="table-dark">
         <tr>
           <th scope="col">#</th>
           <th scope="col">Book Name</th>
