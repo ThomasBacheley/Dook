@@ -15,9 +15,6 @@ const bookSlice = createSlice({
         },
         deleteBook:(state, action) => {
             state = state.filter((t)=> t.id!== action.payload)
-        },
-        getBook:(state) => {
-            return state;
         }
     }
 })

@@ -10,9 +10,10 @@ import axios from "axios";
 import redux from "./redux";
 
 function App() {
+  var go = false;
   axios
     .get(
-      "https://www.googleapis.com/books/v1/volumes?q=$%7Bexample%7D&maxResults=10"
+      "https://www.googleapis.com/books/v1/volumes?q=$%7Bexample%7D&maxResults=20"
     )
     .then((response) => {
       response.data.items.forEach((book) => {
@@ -22,9 +23,6 @@ function App() {
           author: "Inconnu",
         };
         redux.dispatch({type:'book/addBook',payload:book});
-        
-        var books = redux.dispatch({type:'book/getBook'});
-        console.log(books);
       });
     });
 
@@ -34,7 +32,7 @@ function App() {
       <div className="d-flex justify-content-between">
         <div>
           <h1>Book List</h1>
-          <ListBook></ListBook>
+          <ListBook books={redux.getState().book}></ListBook>
         </div>
         <div>
           <h1>User Librairy</h1>

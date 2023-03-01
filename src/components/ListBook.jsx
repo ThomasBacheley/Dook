@@ -1,10 +1,9 @@
 import Book from "./Book";
-import redux from "../redux";
 
 function ListBook(props) {
   return (
-    <table className="table">
-      <thead>
+    <table className="table bg-perso2">
+      <thead className="table-dark">
         <tr>
           <th scope="col">#</th>
           <th scope="col">Book Name</th>
@@ -12,9 +11,9 @@ function ListBook(props) {
         </tr>
       </thead>
       <tbody>
-        {/* {redux.getState().map((book)=>(
-          <Book key={book.id} book={book}></Book>
-        ))} */}
+        {props.books.map((book) => (
+            <Book key={book.id} book={book}></Book>
+        ))}
       </tbody>
     </table>
   );
