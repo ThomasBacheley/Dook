@@ -30,7 +30,6 @@ const FormLog = () => (
         setTimeout(() => {
           reduxLog.dispatch(login(values));
           setSubmitting(false);
-          console.log(reduxLog.getState().log)
         }, 400);
       }}
     >

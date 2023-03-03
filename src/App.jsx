@@ -9,10 +9,10 @@ import MyHeaders from "./components/MyHeaders";
 import axios from "axios";
 import redux from "./redux";
 import { useEffect, useState } from "react";
-
-import ReduxLog from './reduxLog';
-
 async function getBooksAPI(url) {
+  redux.dispatch({
+    type:"book/clearBook"
+  });
   axios.get(url).then((response) => {
     response.data.items.forEach((book) => {
       var book = {
@@ -28,13 +28,15 @@ async function getBooksAPI(url) {
 }
 
 function App() {
-  const [research, setResearch] = useState("book");
+  const [research, setResearch] = useState();
 
   useEffect(() => {
     getBooksAPI(
-      research?"https://www.googleapis.com/books/v1/volumes?q=" +
-        research +
-        "&maxResults=30":""
+      research
+        ? "https://www.googleapis.com/books/v1/volumes?q=" +
+            research +
+            "&maxResults=30"
+        : ""
     );
   });
 
@@ -47,18 +49,19 @@ function App() {
       <div className="container">
         <MyHeaders editResearch={editResearch} />
         <div className="d-flex justify-content-between">
-          <div>
+          <div className="pe-3">
             <h1>Book List</h1>
             <ListBook type="search" books={redux.getState().book}></ListBook>
           </div>
           <div>
             <h1>User Librairy</h1>
-            <UserLibrairy
-               books={redux.getState().userbook}
-            ></UserLibrairy>
+            <UserLibrairy books={redux.getState().userbook}></UserLibrairy>
           </div>
         </div>
         <FormLog></FormLog>
+        <a href="https://github.com/ThomasBacheley/Dook">
+          https://github.com/ThomasBacheley/Dook
+        </a>
       </div>
       <div className="bg-ecran"></div>
     </div>
