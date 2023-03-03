@@ -6,9 +6,28 @@ const bookSlice = createSlice({
     reducers:{
         addBook:(state, action)=>{
             const newBook = {
+                id: action.payload.id,
                 title: action.payload.title,
-                author: action.payload.author,
-                edition: action.payload.edition
+                author: action.payload.author
+            }
+
+            state.push(newBook);
+        },
+        deleteBook:(state, action) => {
+            state = state.filter((t)=> t.id!== action.payload)
+        }
+    }
+})
+
+const userBookSlice = createSlice({
+    name: "userBook",
+    initialState: [],
+    reducers:{
+        addBook:(state, action)=>{
+            const newBook = {
+                id: action.payload.id,
+                title: action.payload.title,
+                author: action.payload.author
             }
 
             state.push(newBook);
@@ -21,7 +40,8 @@ const bookSlice = createSlice({
 
 const bookStore = configureStore({
     reducer:{
-        book: bookSlice.reducer
+        book: bookSlice.reducer,
+        userbook: userBookSlice.reducer
     }
 })
 

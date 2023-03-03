@@ -11,3 +11,32 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+
+.bg-perso2{
+  background-color: rgb(252, 223, 186);
+}
+
+.btn-perso{
+  background-color: rgb(255, 206, 142);
+  border: solid 1px rgb(189, 152, 105);
+  margin-top: 0.5em;
+}
+
+.btn-perso:hover{
+  background-color: rgb(230, 180, 116);
+  border: solid 1px rgb(151, 122, 83);
+}
+
+.fs-1-5em{
+  font-size: 1.5em;
+}
+
+.bg-ecran{
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh !important;
+  background-color: antiquewhite;
+}
