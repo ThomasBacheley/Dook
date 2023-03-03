@@ -7,6 +7,7 @@ const SearchbookForm = (props) => {
   const handleInputChange = (event) => {
     const { value } = event.target; // recuperer les valeurs de l'input
     setResearch(value);
+    console.log(research)
   };
 
   return (
