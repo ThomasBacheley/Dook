@@ -14,7 +14,7 @@ const SearchbookForm = (props) => {
       onSubmit={(event) => {
         event.preventDefault();
         if (!research) return;
-        props.editResearch(research); // et c'est la qu'on add notre user en quelque sorte
+        props.editResearch(research); // et c'est la qu'on add notre 'recherche' en quelque sorte
         setResearch(research);
       }}
     >
