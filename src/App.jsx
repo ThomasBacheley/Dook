@@ -10,6 +10,8 @@ import axios from "axios";
 import redux from "./redux";
 import { useEffect, useState } from "react";
 
+import ReduxLog from './reduxLog';
+
 async function getBooksAPI(url) {
   axios.get(url).then((response) => {
     console.log(response.data.items.length);
