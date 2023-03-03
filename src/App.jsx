@@ -29,11 +29,10 @@ function App() {
   const [research, setResearch] = useState("book");
 
   useEffect(() => {
-    console.log(research)
     getBooksAPI(
-      "https://www.googleapis.com/books/v1/volumes?q=" +
+      research?"https://www.googleapis.com/books/v1/volumes?q=" +
         research +
-        "&maxResults=30"
+        "&maxResults=30":""
     );
   });
 
@@ -42,7 +41,7 @@ function App() {
   };
 
   return (
-    <div className="bg-perso1 pt-3 h-100">
+    <div className="pt-3">
       <div className="container">
         <MyHeaders editResearch={editResearch} />
         <div className="d-flex justify-content-between">
@@ -59,6 +58,7 @@ function App() {
         </div>
         <FormLog></FormLog>
       </div>
+      <div className="bg-ecran"></div>
     </div>
   );
 }

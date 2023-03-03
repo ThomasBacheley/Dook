@@ -10,8 +10,7 @@ function Book(props) {
       ? props.book.authors.join(", ")
       : "Inconnu",
   });
-  redux.dispatch({ type: "userBook/deleteBook", payload: book })
-  console.log(redux.getState().userbook);}
+  redux.dispatch({ type: "userBook/deleteBook", payload: book })}
   
   function addBook(){
     var book =( {
@@ -21,8 +20,7 @@ function Book(props) {
       ? props.book.authors.join(", ")
       : "Inconnu",
   });
-  redux.dispatch({ type: "userBook/addBook", payload: book })
-  console.log(redux.getState().userbook);}
+  redux.dispatch({ type: "userBook/addBook", payload: book })}
   
   return (
     <tr>

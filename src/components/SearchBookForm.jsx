@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const SearchbookForm = (props) => {
-  const initialFormState = "book";
+  const initialFormState = "";
   const [research, setResearch] = useState(initialFormState);
 
   const handleInputChange = (event) => {
@@ -15,7 +15,7 @@ const SearchbookForm = (props) => {
         event.preventDefault();
         if (!research) return;
         props.editResearch(research); // et c'est la qu'on add notre user en quelque sorte
-        setResearch(research);
+        setResearch("");
       }}
     >
       <label>Book Title</label>
@@ -23,8 +23,7 @@ const SearchbookForm = (props) => {
         type="text"
         name="booktitle"
         value={research}
-        onChange={handleInputChange}
-      />
+        onChange={handleInputChange}      />
       <button className="btn p-0 fs-1-5em">🔎</button>
     </form>
   );

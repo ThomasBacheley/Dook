@@ -12,10 +12,6 @@
   -webkit-text-size-adjust: 100%;
 }
 
-.bg-perso1{
-  background-color: antiquewhite;
-  height: 100vh !important;
-}
 
 .bg-perso2{
   background-color: rgb(252, 223, 186);
@@ -34,4 +30,13 @@
 
 .fs-1-5em{
   font-size: 1.5em;
+}
+
+.bg-ecran{
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh !important;
+  background-color: antiquewhite;
 }
