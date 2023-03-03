@@ -16,6 +16,14 @@ const FormLog = () => (
         ) {
           errors.email = "Invalid email address";
         }
+
+        if (!values.password) {
+          errors.password = "Required";
+        } else if (
+          !/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/i.test(values.password)
+        ) {
+          errors.password = "Invalid password (Minimum eight characters, at least one letter and one number)";
+        }
         return errors;
       }}
       onSubmit={(values, { setSubmitting }) => {

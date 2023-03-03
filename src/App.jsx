@@ -9,7 +9,6 @@ import MyHeaders from "./components/MyHeaders";
 import axios from "axios";
 import redux from "./redux";
 import { useEffect, useState } from "react";
-
 async function getBooksAPI(url) {
   redux.dispatch({
     type:"book/clearBook"
@@ -33,9 +32,11 @@ function App() {
 
   useEffect(() => {
     getBooksAPI(
-      research?"https://www.googleapis.com/books/v1/volumes?q=" +
-        research +
-        "&maxResults=30":""
+      research
+        ? "https://www.googleapis.com/books/v1/volumes?q=" +
+            research +
+            "&maxResults=30"
+        : ""
     );
   });
 
@@ -54,12 +55,13 @@ function App() {
           </div>
           <div>
             <h1>User Librairy</h1>
-            <UserLibrairy
-               books={redux.getState().userbook}
-            ></UserLibrairy>
+            <UserLibrairy books={redux.getState().userbook}></UserLibrairy>
           </div>
         </div>
         <FormLog></FormLog>
+        <a href="https://github.com/ThomasBacheley/Dook">
+          https://github.com/ThomasBacheley/Dook
+        </a>
       </div>
       <div className="bg-ecran"></div>
     </div>
