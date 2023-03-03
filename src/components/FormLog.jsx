@@ -1,9 +1,10 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import reduxLog, { login } from '../reduxLog';
 
 const FormLog = () => (
   <div className="border border-dark rounded w-50 center p-3 bg-perso2">
-    <h1>Any place in your app!</h1>
+    <h1>Login</h1>
     <Formik
       initialValues={{ email: "", password: "" }}
       validate={(values) => {
@@ -19,9 +20,9 @@ const FormLog = () => (
       }}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
-          let JSONValue = JSON.stringify(values, null, 2); //on stock le contenue des inputs au format json
-          alert(JSONValue);
+          reduxLog.dispatch(login(values));
           setSubmitting(false);
+          console.log(reduxLog.getState().log)
         }, 400);
       }}
     >
