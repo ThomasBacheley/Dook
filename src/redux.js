@@ -13,8 +13,8 @@ const bookSlice = createSlice({
 
             state.push(newBook);
         },
-        deleteBook:(state, action) => {
-            state = state.filter((t)=> t.id!== action.payload)
+        clearBook:(state, action) => {
+            state.splice(0, state.length);
         }
     }
 })
@@ -33,7 +33,10 @@ const userBookSlice = createSlice({
             state.push(newBook);
         },
         deleteBook:(state, action) => {
-            state = state.filter((t)=> t.id!== action.payload)
+            const index = state.map(m => m.id).indexOf(action.payload.id, 0);
+            if (index > -1) {
+                state.splice(index, 1);
+            }
         }
     }
 })
