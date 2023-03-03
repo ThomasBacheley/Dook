@@ -14,7 +14,6 @@ import ReduxLog from './reduxLog';
 
 async function getBooksAPI(url) {
   axios.get(url).then((response) => {
-    console.log(response.data.items.length);
     response.data.items.forEach((book) => {
       var book = {
         id: book.id,
@@ -32,11 +31,10 @@ function App() {
   const [research, setResearch] = useState("book");
 
   useEffect(() => {
-    console.log(research)
     getBooksAPI(
-      "https://www.googleapis.com/books/v1/volumes?q=" +
+      research?"https://www.googleapis.com/books/v1/volumes?q=" +
         research +
-        "&maxResults=30"
+        "&maxResults=30":""
     );
   });
 
@@ -45,23 +43,24 @@ function App() {
   };
 
   return (
-    <div className="bg-perso1 pt-3 h-100">
+    <div className="pt-3">
       <div className="container">
         <MyHeaders editResearch={editResearch} />
         <div className="d-flex justify-content-between">
           <div>
             <h1>Book List</h1>
-            <ListBook books={redux.getState().book}></ListBook>
+            <ListBook type="search" books={redux.getState().book}></ListBook>
           </div>
           <div>
             <h1>User Librairy</h1>
             <UserLibrairy
-              books={[{ name: "ywee", authors: "jean", id: 3 }]}
+               books={redux.getState().userbook}
             ></UserLibrairy>
           </div>
         </div>
         <FormLog></FormLog>
       </div>
+      <div className="bg-ecran"></div>
     </div>
   );
 }

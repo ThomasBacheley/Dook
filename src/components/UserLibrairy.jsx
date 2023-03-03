@@ -2,7 +2,7 @@ import ListBook from "./ListBook";
 
 function UserLibrairy(props) {
   return (
-    <ListBook books={props.books}></ListBook>
+    <ListBook books={props.books} type="users"></ListBook>
   );
 }
 
