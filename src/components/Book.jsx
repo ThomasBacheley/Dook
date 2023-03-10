@@ -28,7 +28,7 @@ function Book(props) {
     <tr>
       <th scope="row">{props.book.id}</th>
       <td>{props.book.title}</td>
-      <td>{props.book.authors}</td>
+      <td>{props.book.author}</td>
       <td>
         <button className="btn btn-perso" onClick={props.type =="users"?deleteBook:addBook}>{props.type =="users"?"delete":"add"}</button>
         </td>

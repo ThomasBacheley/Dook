@@ -14,13 +14,11 @@ async function getBooksAPI(url) {
     type:"book/clearBook"
   });
   axios.get(url).then((response) => {
-    response.data.items.forEach((book) => {
+    response.data.forEach((res) => {
       var book = {
-        id: book.id,
-        title: book.volumeInfo.title,
-        author: book.volumeInfo.authors
-          ? book.volumeInfo.authors.join(", ")
-          : "Inconnu",
+        id: res.id,
+        title: res.title,
+        author: res.author
       };
       redux.dispatch({ type: "book/addBook", payload: book });
     });
@@ -41,13 +39,7 @@ function App() {
   const [research, setResearch] = useState();
 
   useEffect(() => {
-    getBooksAPI(
-      research
-        ? "https://www.googleapis.com/books/v1/volumes?q=" +
-            research +
-            "&maxResults=30"
-        : ""
-    );
+    getBooksAPI("http://localhost/api/books");
   });
 
   const editResearch = (research) => {
