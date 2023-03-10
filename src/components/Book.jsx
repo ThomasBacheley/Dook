@@ -2,8 +2,6 @@ import redux from "../redux";
 
 function Book(props) {
 
-  console.log(props)
-  
   function deleteBook(){
     var book =( {
     id: props.book.id,
