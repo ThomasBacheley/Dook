@@ -1,8 +1,9 @@
 import redux from "../redux";
 
 function Book(props) {
-  
+
   function deleteBook(){
+    props.refreshin();
     var book =( {
     id: props.book.id,
     title: props.book.title,
@@ -13,6 +14,7 @@ function Book(props) {
   redux.dispatch({ type: "userBook/deleteBook", payload: book })}
   
   function addBook(){
+    props.refreshin();
     var book =( {
     id: props.book.id,
     title: props.book.title,

@@ -13,7 +13,7 @@ function ListBook(props) {
       </thead>
       <tbody>
         {props.books.map((book) => (
-            <Book key={book.id} book={book} type={props.type}></Book>
+            <Book key={book.id} book={book} type={props.type}  refreshin={props.refreshin}></Book>
         ))}
       </tbody>
     </table>

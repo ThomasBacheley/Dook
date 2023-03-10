@@ -27,7 +27,17 @@ async function getBooksAPI(url) {
   });
 }
 
+
+  
+
 function App() {
+  const [refresh, setRefresh] = useState();
+
+    
+
+  const refreshin = () => {
+    setRefresh(!refresh);
+  };
   const [research, setResearch] = useState();
 
   useEffect(() => {
@@ -51,11 +61,11 @@ function App() {
         <div className="d-flex justify-content-between">
           <div className="pe-3">
             <h1>Book List</h1>
-            <ListBook type="search" books={redux.getState().book}></ListBook>
+            <ListBook type="search" books={redux.getState().book} refreshin={refreshin}></ListBook>
           </div>
           <div>
             <h1>User Librairy</h1>
-            <UserLibrairy books={redux.getState().userbook}></UserLibrairy>
+            <UserLibrairy books={redux.getState().userbook}  refreshin={refreshin}></UserLibrairy>
           </div>
         </div>
         <FormLog></FormLog>
