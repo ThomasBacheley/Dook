@@ -2,7 +2,7 @@ import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import reduxLog, { login } from '../reduxLog';
 
-const FormLog = () => (
+const FormLog = (props) => (
   <div className="border border-dark rounded w-50 center p-3 bg-perso2">
     <h1>Login</h1>
     <Formik
@@ -27,6 +27,7 @@ const FormLog = () => (
         return errors;
       }}
       onSubmit={(values, { setSubmitting }) => {
+        props.refreshin();
         setTimeout(() => {
           reduxLog.dispatch(login(values));
           setSubmitting(false);

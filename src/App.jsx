@@ -39,7 +39,7 @@ function App() {
   const [research, setResearch] = useState();
 
   useEffect(() => {
-    getBooksAPI("http://localhost/api/books");
+    getBooksAPI("http://localhost:8000/api/books");
   });
 
   const editResearch = (research) => {
@@ -60,7 +60,7 @@ function App() {
             <UserLibrairy books={redux.getState().userbook}  refreshin={refreshin}></UserLibrairy>
           </div>
         </div>
-        <FormLog></FormLog>
+        <FormLog  refreshin={refreshin}></FormLog>
         <a href="https://github.com/ThomasBacheley/Dook">
           https://github.com/ThomasBacheley/Dook
         </a>
