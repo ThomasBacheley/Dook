@@ -8,8 +8,12 @@ import MyHeaders from "./components/MyHeaders";
 
 import axios from "./axios";
 import redux from "./redux";
-import reduxLog from "./reduxLog";
+import reduxLog, { login } from "./reduxLog";
 import { useEffect, useState } from "react";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 async function getBooksAPI(url) {
   redux.dispatch({
     type: "book/clearBook",
@@ -34,23 +38,32 @@ function App() {
       axios
         .post("/logout")
         .then((response) => {
-          reduxLog.dispatch({type:"log/logout"});
+          reduxLog.dispatch({ type: "log/logout" });
+          toast.info("Logout!");
         })
         .catch((error) => {
-          console.log(error);
+          console.log(error.response);
+          toast.error(error.message);
         });
     });
   };
 
-  const isLogged = () => {
-    if(reduxLog.getState().log.name != ""){
-      <MyHeaders editResearch={editResearch} />
-    }
-  }
-
   const connecter = () => {
-    console.log(reduxLog.getState().log.id);
-  }
+    axios
+      .get("/api/user")
+      .then((response) => {
+        reduxLog.dispatch(
+          login({
+            id: response.data.id,
+            name: response.data.name,
+            email: response.data.email,
+          })
+        );
+      })
+      .catch((error) => {
+        toast.error(error.message);
+      });
+  };
 
   const refreshin = () => {
     setRefresh(!refresh);
@@ -58,6 +71,7 @@ function App() {
   const [research, setResearch] = useState();
 
   useEffect(() => {
+    connecter();
     getBooksAPI("/api/books");
   });
 
@@ -68,7 +82,7 @@ function App() {
   return (
     <div className="pt-3">
       <div className="container">
-        {isLogged()}
+        <MyHeaders editResearch={editResearch} />
         <div className="d-flex justify-content-between">
           <div className="pe-3">
             <h1>Book List</h1>
@@ -105,6 +119,7 @@ function App() {
           Connecter ?
         </button>
       </div>
+      <ToastContainer />
       <div className="bg-ecran"></div>
     </div>
   );

@@ -3,6 +3,9 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import reduxLog, { login } from "../reduxLog";
 import axios from "../axios";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const FormLog = (props) => (
   <div className="border border-dark rounded w-50 center p-3 bg-perso2">
     <h1>Login</h1>
@@ -28,7 +31,7 @@ const FormLog = (props) => (
         } */
         return errors;
       }}
-      onSubmit={(values, { setSubmitting }) => {
+      onSubmit={(values) => {
         props.refreshin();
 
         axios.get("/sanctum/csrf-cookie").then(() => {
@@ -38,42 +41,39 @@ const FormLog = (props) => (
               password: values.password,
             })
             .then((response) => {
-              reduxLog.dispatch(login({
-                id:response.data.id,
-                name:response.data.name,
-                email:response.data.email
-              }));
-              setSubmitting(false);
+              reduxLog.dispatch(
+                login({
+                  id: response.data.id,
+                  name: response.data.name,
+                  email: response.data.email,
+                })
+              );
+              toast.info("Connecter en tant que " + response.data.name + "!");
             })
             .catch((error) => {
-              console.log(error);
+              toast.error(error.message);
             });
         });
       }}
     >
-      {({ isSubmitting }) => (
-        <Form className="form-group">
-          <div>
-            <label htmlFor="email">Email Address :</label>
-            <Field type="email" name="email" className="form-control" />
-            <ErrorMessage name="email" component="div" />
-          </div>
-          <div>
-            <label htmlFor="email">Password :</label>
-            <Field type="password" name="password" className="form-control" />
-            <ErrorMessage name="password" component="div" />
-          </div>
+      <Form className="form-group">
+        <div>
+          <label htmlFor="email">Email Address :</label>
+          <Field type="email" name="email" className="form-control" />
+          <ErrorMessage name="email" component="div" />
+        </div>
+        <div>
+          <label htmlFor="email">Password :</label>
+          <Field type="password" name="password" className="form-control" />
+          <ErrorMessage name="password" component="div" />
+        </div>
 
-          <button
-            type="submit"
-            className="btn btn-perso"
-            disabled={isSubmitting}
-          >
-            Submit
-          </button>
-        </Form>
-      )}
+        <button type="submit" className="btn btn-perso">
+          Submit
+        </button>
+      </Form>
     </Formik>
+    <ToastContainer />
   </div>
 );
 
