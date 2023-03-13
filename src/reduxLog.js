@@ -2,20 +2,18 @@ import { configureStore, createSlice } from "@reduxjs/toolkit";
 
 const logSlice = createSlice({
   name: "log",
-  initialState: { email: "", password: "" },
+  initialState: { id: null, name: "", email: "" },
   reducers: {
     login: (state, action) => {
-      const log = {
-        email: action.payload.email,
-        password: action.payload.password,
-      };
-      state.email = log.email;
-      state.password = log.password;
+      state.id = action.payload.id;
+      state.name = action.payload.name;
+      state.email = action.payload.email;
     },
     logout: (state) => {
+      state.id = null;
+      state.name = "";
       state.email = "";
-      state.password = "";
-    },
+    }
   },
 });
 
@@ -25,6 +23,6 @@ const logStore = configureStore({
   },
 });
 
-export const { login,logout} = logSlice.actions;
+export const { login, logout } = logSlice.actions;
 
 export default logStore;
