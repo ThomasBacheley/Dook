@@ -34,10 +34,14 @@ function App() {
   const [refresh, setRefresh] = useState();
 
   const connecter = () => {
-    axios
+    return axios
       .get("/api/currentuser")
       .then((response) => {
-        console.log(response.data);
+        console.log({
+          id: response.data.id,
+          name: response.data.name,
+          email: response.data.email,
+        })
         reduxLog.dispatch(
           login({
             id: response.data.id,
@@ -45,6 +49,8 @@ function App() {
             email: response.data.email,
           })
         );
+
+        return response.data.name
       })
       .catch((error) => {
         toast.error(error.response.statusText);
@@ -76,10 +82,16 @@ function App() {
         })
         .catch((error) => {
           console.log(error.response.data);
-          toast.error(`${error.message} : ${error.response.data.message ? error.response.data.message : error.response.statusText}`);
+          toast.error(
+            `${error.message} : ${
+              error.response.data.message
+                ? error.response.data.message
+                : error.response.statusText
+            }`
+          );
         });
     });
-  }
+  };
 
   return (
     <div className="pt-3">
@@ -102,11 +114,22 @@ function App() {
             ></UserLibrairy>
           </div>
         </div>
-        <FormLog refreshin={refreshin} />
+
         <a href="https://github.com/ThomasBacheley/Dook">
           https://github.com/ThomasBacheley/Dook
         </a>
-        
+        {reduxLog.getState().log.name ? (
+          <button
+            className="btn btn-perso"
+            onClick={() => {
+              logout();
+            }}
+          >
+            Logout
+          </button>
+        ) : (
+          <FormLog refreshin={refreshin} />
+        )}
         <button
           className="btn btn-perso"
           onClick={() => {
@@ -114,14 +137,6 @@ function App() {
           }}
         >
           Connecter ?
-        </button>
-        <button
-          className="btn btn-perso"
-          onClick={() => {
-            logout();
-          }}
-        >
-          Logout
         </button>
       </div>
       <ToastContainer />
