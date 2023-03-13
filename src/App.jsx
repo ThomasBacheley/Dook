@@ -33,25 +33,11 @@ async function getBooksAPI(url) {
 function App() {
   const [refresh, setRefresh] = useState();
 
-  const logout = () => {
-    axios.get("/sanctum/csrf-cookie").then(() => {
-      axios
-        .post("/logout")
-        .then((response) => {
-          reduxLog.dispatch({ type: "log/logout" });
-          toast.info("Logout!");
-        })
-        .catch((error) => {
-          console.log(error.response);
-          toast.error(error.message);
-        });
-    });
-  };
-
   const connecter = () => {
     axios
-      .get("/api/user")
+      .get("/api/currentuser")
       .then((response) => {
+        console.log(response.data);
         reduxLog.dispatch(
           login({
             id: response.data.id,
@@ -61,13 +47,14 @@ function App() {
         );
       })
       .catch((error) => {
-        toast.error(error.message);
+        toast.error(error.response.statusText);
       });
   };
 
   const refreshin = () => {
     setRefresh(!refresh);
   };
+
   const [research, setResearch] = useState();
 
   useEffect(() => {
@@ -78,6 +65,21 @@ function App() {
   const editResearch = (research) => {
     setResearch(research);
   };
+
+  const logout = () => {
+    axios.get("/sanctum/csrf-cookie").then(() => {
+      axios
+        .post("/logout")
+        .then((response) => {
+          reduxLog.dispatch({ type: "log/logout" });
+          toast.info("Logout!");
+        })
+        .catch((error) => {
+          console.log(error.response.data);
+          toast.error(`${error.message} : ${error.response.data.message ? error.response.data.message : error.response.statusText}`);
+        });
+    });
+  }
 
   return (
     <div className="pt-3">
@@ -100,23 +102,26 @@ function App() {
             ></UserLibrairy>
           </div>
         </div>
-        <FormLog refreshin={refreshin}></FormLog>
+        <FormLog refreshin={refreshin} />
         <a href="https://github.com/ThomasBacheley/Dook">
           https://github.com/ThomasBacheley/Dook
         </a>
+        
         <button
-          onClick={() => {
-            logout();
-          }}
-        >
-          Logout Perdu
-        </button>
-        <button
+          className="btn btn-perso"
           onClick={() => {
             connecter();
           }}
         >
           Connecter ?
+        </button>
+        <button
+          className="btn btn-perso"
+          onClick={() => {
+            logout();
+          }}
+        >
+          Logout
         </button>
       </div>
       <ToastContainer />

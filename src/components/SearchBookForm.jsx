@@ -18,12 +18,15 @@ const SearchbookForm = (props) => {
         setResearch("");
       }}
     >
-      <label>Book Title</label>
+      <label>
+        <h3>Book Title : </h3>
+      </label>
       <input
         type="text"
         name="booktitle"
         value={research}
-        onChange={handleInputChange}      />
+        onChange={handleInputChange}
+      />
       <button className="btn p-0 fs-1-5em">🔎</button>
     </form>
   );
