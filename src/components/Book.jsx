@@ -1,4 +1,5 @@
 import redux from "../redux";
+import axios from "axios";
 
 function Book(props) {
 
@@ -13,6 +14,7 @@ function Book(props) {
   });
   redux.dispatch({ type: "userBook/deleteBook", payload: book })}
   
+  
   function addBook(){
     props.refreshin();
     var book =( {
@@ -22,7 +24,14 @@ function Book(props) {
       ? props.book.authors.join(", ")
       : "Inconnu",
   });
-  redux.dispatch({ type: "userBook/addBook", payload: book })}
+  axios.post('/api/library/add', {
+    bid: book.id
+  })
+  .then(function (response) {
+    console.log(response);
+    redux.dispatch({ type: "userBook/addBook", payload: book });
+  });
+  }
   
   return (
     <tr>
