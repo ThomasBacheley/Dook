@@ -12,7 +12,14 @@ function Book(props) {
       ? props.book.authors.join(", ")
       : "Inconnu",
   });
-  redux.dispatch({ type: "userBook/deleteBook", payload: book })}
+  axios.post('/api/library/delete', {
+    bid: book.id
+  })
+  .then(function (response) {
+    console.log(response);
+    redux.dispatch({ type: "userBook/deleteBook", payload: book });
+  });
+  }
   
   
   function addBook(){
